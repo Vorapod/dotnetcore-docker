@@ -1,6 +1,6 @@
 using Microsoft.EntityFrameworkCore;
 
-namespace dotnetcore_ef_mysql_docker.models
+namespace dotnetcore_ef_mysql_docker.Models
 {
     public class StudentContext : DbContext
     {

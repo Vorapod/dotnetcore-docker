@@ -1,6 +1,6 @@
 using System.ComponentModel.DataAnnotations;
 
-namespace dotnetcore_ef_mysql_docker.models
+namespace dotnetcore_ef_mysql_docker.Models
 {
     public class Student
     {
