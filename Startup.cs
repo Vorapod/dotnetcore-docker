@@ -8,7 +8,7 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-using dotnetcore_ef_mysql_docker.models;
+using dotnetcore_ef_mysql_docker.Models;
 
 namespace dotnetcore_ef_mysql_docker
 {
@@ -34,10 +34,7 @@ namespace dotnetcore_ef_mysql_docker
 
             app.UseEndpoints(endpoints =>
             {
-                endpoints.MapGet("/", async context =>
-                {
-                    await context.Response.WriteAsync("Hello World!");
-                });
+                endpoints.MapControllers();
             });
         }
     }
