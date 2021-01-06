@@ -20,7 +20,7 @@ namespace dotnetcore_ef_mysql_docker
             Host.CreateDefaultBuilder(args)
                 .ConfigureWebHostDefaults(webBuilder =>
                 {
-                    webBuilder.UseStartup<Startup>();
+                    webBuilder.UseStartup<Startup>().UseUrls("http://*:5000");
                 });
     }
 }
